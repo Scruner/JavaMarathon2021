@@ -7,8 +7,8 @@ public class Task2 {
   public static void main(String[] args) {
     int[] array = new int[100];
     Random random = new Random();
-    int maxElement = array[array.length - 1];
-    int minElement = array[0];
+    int maxElement = 0;
+    int minElement = 10000;
     int countElementZero = 0;
     int sumElementZero = 0;
     for (int i = 0; i < array.length; i++) {
@@ -23,7 +23,7 @@ public class Task2 {
       }
       if (arr % 10 == 0) {
         countElementZero++;
-        sumElementZero = sumElementZero + arr;
+        sumElementZero += arr;
       }
     }
     System.out.println("Сгенерирован следующий массив:");

@@ -7,7 +7,7 @@ public class Task3 {
   public static void main(String[] args) {
     int[][] array = new int[12][8];
     int[] sum = new int[array.length];
-    int maxElement = sum[sum.length - 1];
+    int maxElement = 0;
     int maxIndex = 0;
     Random random = new Random();
     for (int i = 0; i < array.length; i++) {
@@ -17,7 +17,7 @@ public class Task3 {
       }
     }
     for (int i = 0; i < sum.length; i++) {
-      if (sum[i] > maxElement) {
+      if (sum[i] >= maxElement) {
         maxElement = sum[i];
         maxIndex = i;
       }

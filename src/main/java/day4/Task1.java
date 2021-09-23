@@ -29,7 +29,7 @@ public class Task1 {
       if (array[i] % 2 != 0) {
         countOddNumber++;
       }
-      sum = sum + array[i];
+      sum += array[i];
     }
     System.out.println("Сгенерирован следующий массив:");
     System.out.println(Arrays.toString(array));
